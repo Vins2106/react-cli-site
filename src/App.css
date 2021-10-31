@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/* font */
+
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* colors */
+:root {
+  --bg: #191923;
+  --a: #87A330;
+  --b: #BF0603;
+  --c: #FBFEF9;
+  --d: #fcba03;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: var(--bg);
+  padding: 10px 20px;
+}
+
+
+/* text config */
+.txt {
+  font-size: 18px;
+}
+
+.txt.a {
+  color: var(--a);
+}
+
+.txt.b {
+  color: var(--b);
+}
+
+.txt.c {
+  color: var(--c);
+}
+
+.txt.d {
+  color: var(--d);
+}
+
+.txt.echo {
+  min-width: fit-content;
+}
+
+.txt.txt-margin {
+  padding-bottom: 40px;
+}
+
+
+/* input config */
+.input {
+  font-size: 18px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.input::before {
+  content: "  ";
+  display: block;
+}
+
+.input.a {
+  color: var(--a);
+}
+
+.input.b {
+  color: var(--b);
+}
+
+.input.c {
+  color: var(--c);
+}
+
+.input.d {
+  color: var(--d);
+}
+
+.input.none {
+  color: var(--bg);
+}
+
+/* global */
+.app {
+  width: 100%;
+  max-width: 992px;
+  min-height: 90vh;
+  margin: 0 auto;
+}
+
+.container {
+  margin-bottom: 50vh;
+}
+
+.messages {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
 }
