@@ -1,7 +1,7 @@
 {
   "name": "react-default",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://rcs.vinsdev.xyz",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
